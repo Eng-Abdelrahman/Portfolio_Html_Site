@@ -8,16 +8,17 @@
 </head>
 
 <body>
+
     <div class="container">
         <div class="nav-wrapper">
 
             <div class="left-side">
 
-                <div class="nav-lik-wrapper">
+                <div class="nav-link-wrapper">
                     <a href="index.html">Home</a>
                 </div>
 
-                <div class="left-side">
+                <div class="nav-link-wrapper">
                     <a href="about.html">About</a>
                 </div>
 
@@ -25,13 +26,208 @@
 
             <div class="right-side">
                 <div class="brand">
-                <div>Green Zone :)</div>
-            </div>
+                    <div>Green Zone :)</div>
+                </div>
             </div>
 
         </div>
     </div>
 
+    <div class="content-wrapp">
+
+        <div class="portfolio-items-wrapper">
+
+
+            <div class="portfolio-item-wrapper">
+
+                <div class="portfolio-img-background" style="background-image:url(images/1.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/1.png">
+                    </div>
+                    <div class="subtitle">
+                        project 1
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="portfolio-item-wrapper">
+
+                <div class="portfolio-img-background" style="background-image:url(images/2.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/2.png">
+                    </div>
+                    <div class="subtitle">
+                        project 2
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="portfolio-item-wrapper">
+
+                <div class="portfolio-img-background" style="background-image:url(images/3.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/3.png">
+                    </div>
+                    <div class="subtitle">
+                        project 3
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="portfolio-item-wrapper">
+
+                <div class="portfolio-img-background" style="background-image:url(images/4.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/4.png">
+                    </div>
+                    <div class="subtitle">
+                        project 4
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="portfolio-item-wrapper">
+
+                <div class="portfolio-img-background" style="background-image:url(images/5.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/5.png">
+                    </div>
+                    <div class="subtitle">
+                        project 5
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="portfolio-item-wrapper">
+
+                <div class="portfolio-img-background" style="background-image:url(images/6.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/6.png">
+                    </div>
+                    <div class="subtitle">
+                        project 6
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="portfolio-item-wrapper">
+
+                <div class="portfolio-img-background" style="background-image:url(images/7.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images//logos/7.png">
+                    </div>
+                    <div class="subtitle">
+                        project 7
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="portfolio-item-wrapper">
+
+                <div class="portfolio-img-background" style="background-image:url(images/8.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/8.png">
+                    </div>
+                    <div class="subtitle">
+                        project 8
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="portfolio-item-wrapper">
+
+                <div class="portfolio-img-background" style="background-image:url(images/9.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/9.png">
+                    </div>
+                    <div class="subtitle">
+                        project 9
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="portfolio-item-wrapper">
+
+                <div class="portfolio-img-background" style="background-image:url(images/10.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/10.png">
+                    </div>
+                    <div class="subtitle">
+                        project 10
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="portfolio-item-wrapper">
+
+                <div class="portfolio-img-background" style="background-image:url(images/11.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/11.png">
+                    </div>
+                    <div class="subtitle">
+                        project 11
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="portfolio-item-wrapper">
+
+                <div class="portfolio-img-background" style="background-image:url(images/12.jpg)"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/12.png">
+                    </div>
+                    <div class="subtitle">
+                        project 12
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
 </body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+
+        portfolioItem.addEventListener('mouseover', () => {
+
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+
+</script>
 
 </html>
